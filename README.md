@@ -8,7 +8,7 @@ Time spent: **8** hours spent in total
 
 The following **required** functionality is completed:
 
-* [ ] User can **scroll through current movies** from the Movie Database API
+* [x] User can **scroll through current movies** from the Movie Database API
 
 The following **optional** features are implemented:
 
