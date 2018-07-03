@@ -8,10 +8,11 @@ import org.parceler.Parcel;
 public class Movie {
 
     //values from API
-    public String title;
-    public String overview;
-    public String posterPath;
-    public String backdropPath;
+    String title;
+    String overview;
+    String posterPath;
+    String backdropPath;
+    Double voteAverage;
 
     //no arg, empty constructor - requirement for parcelable class
     public Movie() {}
@@ -22,11 +23,16 @@ public class Movie {
         overview = object.getString("overview");
         posterPath = object.getString("poster_path");
         backdropPath = object.getString("backdrop_path");
+        voteAverage = object.getDouble("vote_average");
 
     }
 
     public String getBackdropPath() {
         return this.backdropPath;
+    }
+
+    public Double getVoteAverage() {
+        return voteAverage;
     }
 
     public String getTitle() {
